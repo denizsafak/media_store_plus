@@ -279,8 +279,9 @@ class MediaStorePlusPlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
             }
         }
 
-        val isReplaced = deleteFileUsingDisplayName(name, appFolder, dirType, dirName)
-        Log.d("saveFile<isReplaced>", isReplaced.toString())
+        // val isReplaced = deleteFileUsingDisplayName(name, appFolder, dirType, dirName)
+        // Log.d("saveFile<isReplaced>", isReplaced.toString())
+        val isReplaced = false
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             val values = ContentValues().apply {
